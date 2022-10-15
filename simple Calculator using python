@@ -1,0 +1,22 @@
+def cal(a,b,c):
+    if c=="+":
+        return a+b
+    elif c=="-":
+        return a-b
+    elif c=="*":
+        return a*b
+    elif c=="/":
+        return a/b
+    elif c=="**":
+        return a**b
+    elif c=="//":
+        return a//b
+    elif c=="%":
+        return a%b
+    else:
+        return "Enter a valid input."
+a=float(input("Enter First Number: "))
+b=float(input("Enter Second Number: "))
+c=input("Enter the operation you want to perform: ")
+d=cal(a,b,c)
+print(a,c,b,"=",d)
